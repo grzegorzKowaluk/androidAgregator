@@ -3,23 +3,89 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_task01">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="edu.sci.agregator.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/nav_task01"
+        android:name="edu.sci.agregator.ui.task01.Task01Fragment"
+        android:label="@string/menu_task01"
+        tools:layout="@layout/fragment_task01"/>
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="edu.sci.agregator.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_task02"
+        android:name="edu.sci.agregator.ui.task02.Task02Fragment"
+        android:label="@string/menu_task02"
+        tools:layout="@layout/fragment_task02" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="edu.sci.agregator.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_task03"
+        android:name="edu.sci.agregator.ui.task03.Task03Fragment"
+        android:label="@string/menu_task03"
+        tools:layout="@layout/fragment_task03" />
+
+    <fragment
+        android:id="@+id/nav_task04"
+        android:name="edu.sci.agregator.ui.task04.Task04Fragment"
+        android:label="@string/menu_task04"
+        tools:layout="@layout/fragment_task04" />
+    <fragment
+        android:id="@+id/nav_task05"
+        android:name="edu.sci.agregator.ui.task05.Task05Fragment"
+        android:label="@string/menu_task05"
+        tools:layout="@layout/fragment_task05" />
+    <fragment
+        android:id="@+id/nav_task06"
+        android:name="edu.sci.agregator.ui.task06.Task06Fragment"
+        android:label="@string/menu_task06"
+        tools:layout="@layout/fragment_task06" />
+    <fragment
+        android:id="@+id/nav_task07"
+        android:name="edu.sci.agregator.ui.task07.Task07Fragment"
+        android:label="@string/menu_task07"
+        tools:layout="@layout/fragment_task07" />
+    <fragment
+        android:id="@+id/nav_task08"
+        android:name="edu.sci.agregator.ui.task08.Task08Fragment"
+        android:label="@string/menu_task08"
+        tools:layout="@layout/fragment_task08" />
+    <fragment
+        android:id="@+id/nav_task09"
+        android:name="edu.sci.agregator.ui.task09.Task09Fragment"
+        android:label="@string/menu_task09"
+        tools:layout="@layout/fragment_task09" />
+    <fragment
+        android:id="@+id/nav_task10"
+        android:name="edu.sci.agregator.ui.task10.Task10Fragment"
+        android:label="@string/menu_task10"
+        tools:layout="@layout/fragment_task10" />
+    <fragment
+        android:id="@+id/nav_task11"
+        android:name="edu.sci.agregator.ui.task11.Task11Fragment"
+        android:label="@string/menu_task11"
+        tools:layout="@layout/fragment_task11" />
+    <fragment
+        android:id="@+id/nav_task12"
+        android:name="edu.sci.agregator.ui.task12.Task12Fragment"
+        android:label="@string/menu_task12"
+        tools:layout="@layout/fragment_task12" />
+    <fragment
+        android:id="@+id/nav_task13"
+        android:name="edu.sci.agregator.ui.task13.Task13Fragment"
+        android:label="@string/menu_task13"
+        tools:layout="@layout/fragment_task13" />
+    <fragment
+        android:id="@+id/nav_task14"
+        android:name="edu.sci.agregator.ui.task14.Task14Fragment"
+        android:label="@string/menu_task14"
+        tools:layout="@layout/fragment_task14" />
+    <fragment
+        android:id="@+id/nav_task15"
+        android:name="edu.sci.agregator.ui.task15.Task15Fragment"
+        android:label="@string/menu_task15"
+        tools:layout="@layout/fragment_task15" />
+    <fragment
+        android:id="@+id/nav_task16"
+        android:name="edu.sci.agregator.ui.task16.Task16Fragment"
+        android:label="@string/menu_task16"
+        tools:layout="@layout/fragment_task16" />
 </navigation>
