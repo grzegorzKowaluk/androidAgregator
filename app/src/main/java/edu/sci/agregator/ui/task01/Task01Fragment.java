@@ -39,7 +39,7 @@ public class Task01Fragment extends Fragment {
         CheckBox checkBox = (CheckBox) view.findViewById(R.id.checkBoxId5);
 
         button.setOnClickListener(v -> {
-            String text = "NIE WPISNO TEKSTU";
+            String text = "NIE WPISANO TEKSTU";
             if(!editText.getText().toString().isEmpty()) {
                 text = editText.getText().toString();
             }
