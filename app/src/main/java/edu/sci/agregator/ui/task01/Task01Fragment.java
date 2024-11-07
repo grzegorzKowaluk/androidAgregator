@@ -11,6 +11,13 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.Toast;
+
+import com.google.android.material.snackbar.Snackbar;
 
 import edu.sci.agregator.R;
 
@@ -25,7 +32,25 @@ public class Task01Fragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_task01, container, false);
+        View view = inflater.inflate(R.layout.fragment_task01, container, false);
+
+        Button button = (Button) view.findViewById(R.id.buttonId3);
+        EditText editText = (EditText) view.findViewById(R.id.editTextId2);
+        CheckBox checkBox = (CheckBox) view.findViewById(R.id.checkBoxId5);
+
+        button.setOnClickListener(v -> {
+            String text = "NIE WPISNO TEKSTU";
+            if(!editText.getText().toString().isEmpty()) {
+                text = editText.getText().toString();
+            }
+            if(checkBox.isChecked()) {
+                Toast.makeText(view.getContext(), text, Toast.LENGTH_SHORT).show();
+            } else {
+                Snackbar.make(view, text, Snackbar.LENGTH_SHORT).show();
+            }
+        });
+
+        return view;
     }
 
     @Override
