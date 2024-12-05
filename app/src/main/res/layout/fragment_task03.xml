@@ -5,20 +5,28 @@
     android:layout_height="match_parent"
     tools:context=".ui.task03.Task03Fragment"
     android:id="@+id/container">
-        <ListView
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/list"
-            android:layout_weight="1"
-            android:layout_margin="5dp"/>
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fab_image_button"
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
-            android:layout_marginEnd="@dimen/fab_margin"
-            android:layout_marginBottom="16dp"
-            android:src="@drawable/ic_list_add" />
+            android:orientation="horizontal"
+                >
+                <EditText
+                    android:id="@+id/addTodoText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    />
+                <Button
+                    android:id="@+id/addTodoButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Add"/>
+        </LinearLayout>
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/todoList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
 </FrameLayout>
